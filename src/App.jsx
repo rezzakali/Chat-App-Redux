@@ -1,11 +1,16 @@
 import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
+import useAuthCheck from './hooks/useAuthCheck';
 import Conversation from './pages/Conversation';
 import Inbox from './pages/Inbox';
 import Login from './pages/Login';
 import Register from './pages/Register';
 
 function App() {
-  return (
+  const authChecked = useAuthCheck();
+
+  return !authChecked ? (
+    <>Checking authentication...</>
+  ) : (
     <Router>
       <Routes>
         <Route path="/" element={<Login />} />
