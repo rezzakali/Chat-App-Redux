@@ -19,7 +19,6 @@ function App() {
           path="/"
           element={
             <PublicRoute>
-              {' '}
               <Login />
             </PublicRoute>
           }
