@@ -1,4 +1,9 @@
-import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
+import {
+  Navigate,
+  Route,
+  BrowserRouter as Router,
+  Routes,
+} from 'react-router-dom';
 import PrivateRoute from './components/PrivateRoute';
 import PublicRoute from './components/PublicRoute';
 import useAuthCheck from './hooks/useAuthCheck';
@@ -11,7 +16,7 @@ function App() {
   const authChecked = useAuthCheck();
 
   return !authChecked ? (
-    <>Checking authentication...</>
+    <div className="m-2">Checking authentication...</div>
   ) : (
     <Router>
       <Routes>
@@ -47,6 +52,7 @@ function App() {
             </PrivateRoute>
           }
         />
+        <Route path="*" element={<Navigate to="/" />} />
       </Routes>
     </Router>
   );
