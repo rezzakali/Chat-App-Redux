@@ -5,6 +5,12 @@
       "password": "$2a$10$ZIt26GUodQuVeraOc86E5.HNn5xE/bJ7kXQp1NXPqTUkddQswQTW6",
       "name": "Sumit Saha",
       "id": 1
+    },
+    {
+      "email": "akash@learnwithsumit.com",
+      "password": "$2a$10$gGImqV3LuAuXfBeZGqKiyureIFy6kzAe/vrtXkm/CuSbLqszzs23K",
+      "name": "Akash",
+      "id": 2
     }
   ],
   "conversations": [

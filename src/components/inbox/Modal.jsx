@@ -1,17 +1,43 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import conversationsApi from '../../features/conversations/conversationsApi';
 import { useGetUserQuery } from '../../features/user/userApi';
 import isValidEmail from '../../utils/isValidEmail';
 import Error from '../ui/Error';
 
 function Modal({ open, control }) {
+  const { user } = useSelector((state) => state.auth);
+  const { email: loggedInUserEmail } = user || {};
   const [to, setTo] = useState('');
   const [message, setMessage] = useState('');
   const [userChecked, setUserChecked] = useState(false);
+  const [error, setError] = useState('');
+  const [conversation, setConversation] = useState(undefined);
+
+  const dispatch = useDispatch();
 
   // request api
   const { data: participant } = useGetUserQuery(to, {
     skip: !userChecked,
   });
+
+  useEffect(() => {
+    if (
+      participant?.length > 0 &&
+      participant[0]?.email !== loggedInUserEmail
+    ) {
+      // check existence conversations
+      dispatch(
+        conversationsApi.endpoints.getConversation.initiate({
+          participantEmail: to,
+          loggedInUserEmail: loggedInUserEmail,
+        })
+      )
+        .unwrap()
+        .then((data) => setConversation(data))
+        .catch((err) => setError('There was a problem!'));
+    }
+  }, [participant, dispatch, to, loggedInUserEmail]);
 
   // handling debounce
   const debounceHandler = (fn, delay) => {
@@ -33,6 +59,11 @@ function Modal({ open, control }) {
 
   const handleSearch = debounceHandler(doSearch, 500);
 
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log('Form submitted');
+  };
+
   return (
     open && (
       <>
@@ -44,7 +75,7 @@ function Modal({ open, control }) {
           <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900">
             Send message
           </h2>
-          <form className="mt-8 space-y-6">
+          <form className="mt-8 space-y-6" onSubmit={handleSubmit}>
             <div className="rounded-md shadow-sm -space-y-px">
               <div>
                 <label htmlFor="to" className="sr-only">
@@ -80,7 +111,12 @@ function Modal({ open, control }) {
             <div>
               <button
                 type="submit"
-                className="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-violet-600 hover:bg-violet-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-violet-500"
+                className="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-violet-600 hover:bg-violet-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-violet-500 disabled:pointer-events-none disabled:opacity-50 disabled:cursor-not-allowed"
+                disabled={
+                  conversation === undefined ||
+                  (participant?.length > 0 &&
+                    participant[0]?.email === loggedInUserEmail)
+                }
               >
                 Send Message
               </button>
@@ -88,6 +124,11 @@ function Modal({ open, control }) {
             {participant?.length === 0 && (
               <Error message="User does not exist!" />
             )}
+            {participant?.length > 0 &&
+              participant[0]?.email === loggedInUserEmail && (
+                <Error message="You can not send message to your self!" />
+              )}
+            {error !== '' && <Error message={error} />}
           </form>
         </div>
       </>

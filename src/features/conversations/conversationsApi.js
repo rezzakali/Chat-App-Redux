@@ -41,3 +41,5 @@ export const {
   editConversation,
   useGetConversationQuery,
 } = conversationsApi;
+
+export default conversationsApi;
