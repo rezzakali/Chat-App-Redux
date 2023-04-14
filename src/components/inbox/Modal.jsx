@@ -1,6 +1,9 @@
 import { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import conversationsApi from '../../features/conversations/conversationsApi';
+import conversationsApi, {
+  useAddConversationMutation,
+  useEditConversationMutation,
+} from '../../features/conversations/conversationsApi';
 import { useGetUserQuery } from '../../features/user/userApi';
 import isValidEmail from '../../utils/isValidEmail';
 import Error from '../ui/Error';
@@ -8,6 +11,7 @@ import Error from '../ui/Error';
 function Modal({ open, control }) {
   const { user } = useSelector((state) => state.auth);
   const { email: loggedInUserEmail } = user || {};
+
   const [to, setTo] = useState('');
   const [message, setMessage] = useState('');
   const [userChecked, setUserChecked] = useState(false);
@@ -15,6 +19,12 @@ function Modal({ open, control }) {
   const [conversation, setConversation] = useState(undefined);
 
   const dispatch = useDispatch();
+
+  const [addConversation, { isSuccess: isAddConversationsSuccess }] =
+    useAddConversationMutation();
+
+  const [editConversation, { isSuccess: isEditConversationsSuccess }] =
+    useEditConversationMutation();
 
   // request api
   const { data: participant } = useGetUserQuery(to, {
@@ -29,8 +39,8 @@ function Modal({ open, control }) {
       // check existence conversations
       dispatch(
         conversationsApi.endpoints.getConversation.initiate({
-          participantEmail: to,
           loggedInUserEmail: loggedInUserEmail,
+          participantEmail: to,
         })
       )
         .unwrap()
@@ -61,8 +71,39 @@ function Modal({ open, control }) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log('Form submitted');
+
+    if (conversation?.length > 0) {
+      // edit conversation
+      editConversation({
+        id: conversation[0].id,
+        sender: loggedInUserEmail,
+        data: {
+          participants: `${loggedInUserEmail}-${participant[0].email}`,
+          users: [user, participant[0]],
+          message,
+          timestamp: new Date().getTime(),
+        },
+      });
+    } else if (conversation?.length === 0) {
+      // add conversation
+      addConversation({
+        sender: loggedInUserEmail,
+        data: {
+          participants: `${loggedInUserEmail}-${participant[0].email}`,
+          users: [user, participant[0]],
+          message,
+          timestamp: new Date().getTime(),
+        },
+      });
+    }
   };
+
+  // for modal after edit || add conversation
+  useEffect(() => {
+    if (isAddConversationsSuccess || isEditConversationsSuccess) {
+      control();
+    }
+  }, [isAddConversationsSuccess, isEditConversationsSuccess]);
 
   return (
     open && (

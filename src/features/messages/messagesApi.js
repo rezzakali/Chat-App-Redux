@@ -9,7 +9,17 @@ const messagesApi = apiSlice.injectEndpoints({
         }`,
       }),
     }),
+
+    addMessage: builder.mutation({
+      query: (data) => ({
+        url: '/messages',
+        method: 'POST',
+        body: data,
+      }),
+    }),
   }),
 });
 
-export const { useGetMessagesQuery } = messagesApi;
+export const { useGetMessagesQuery, useAddMessageMutation } = messagesApi;
+
+export default messagesApi;
