@@ -13,10 +13,100 @@
       "id": 2
     },
     {
+      "email": "john@learnwithsumit.com",
+      "password": "$2a$10$j7YF9YdCZGvAYikia9hPLudQC5xAqobOtS3gZ7Yc4X5FL6igl6eEu",
+      "name": "John",
+      "id": 3
+    },
+    {
+      "email": "jane@learnwithsumit.com",
+      "password": "$2a$10$j7YF9YdCZGvAYikia9hPLudQC5xAqobOtS3gZ7Yc4X5FL6igl6eEu",
+      "name": "Jane",
+      "id": 4
+    },
+    {
+      "email": "michael@learnwithsumit.com",
+      "password": "$2a$10$j7YF9YdCZGvAYikia9hPLudQC5xAqobOtS3gZ7Yc4X5FL6igl6eEu",
+      "name": "Michael",
+      "id": 5
+    },
+    {
+      "email": "sara@learnwithsumit.com",
+      "password": "$2a$10$j7YF9YdCZGvAYikia9hPLudQC5xAqobOtS3gZ7Yc4X5FL6igl6eEu",
+      "name": "Sara",
+      "id": 6
+    },
+    {
+      "email": "david@learnwithsumit.com",
+      "password": "$2a$10$j7YF9YdCZGvAYikia9hPLudQC5xAqobOtS3gZ7Yc4X5FL6igl6eEu",
+      "name": "David",
+      "id": 7
+    },
+    {
+      "email": "amy@learnwithsumit.com",
+      "password": "$2a$10$j7YF9YdCZGvAYikia9hPLudQC5xAqobOtS3gZ7Yc4X5FL6igl6eEu",
+      "name": "Amy",
+      "id": 8
+    },
+    {
+      "email": "kevin@learnwithsumit.com",
+      "password": "$2a$10$j7YF9YdCZGvAYikia9hPLudQC5xAqobOtS3gZ7Yc4X5FL6igl6eEu",
+      "name": "Kevin",
+      "id": 9
+    },
+    {
+      "email": "emily@learnwithsumit.com",
+      "password": "$2a$10$j7YF9YdCZGvAYikia9hPLudQC5xAqobOtS3gZ7Yc4X5FL6igl6eEu",
+      "name": "Emily",
+      "id": 10
+    },
+    {
+      "email": "jason@learnwithsumit.com",
+      "password": "$2a$10$j7YF9YdCZGvAYikia9hPLudQC5xAqobOtS3gZ7Yc4X5FL6igl6eEu",
+      "name": "Jason",
+      "id": 11
+    },
+    {
+      "email": "olivia@learnwithsumit.com",
+      "password": "$2a$10$j7YF9YdCZGvAYikia9hPLudQC5xAqobOtS3gZ7Yc4X5FL6igl6eEu",
+      "name": "Olivia",
+      "id": 12
+    },
+    {
+      "email": "jacob@learnwithsumit.com",
+      "password": "$2a$10$j7YF9YdCZGvAYikia9hPLudQC5xAqobOtS3gZ7Yc4X5FL6igl6eEu",
+      "name": "Jacob",
+      "id": 13
+    },
+    {
+      "email": "sophia@learnwithsumit.com",
+      "password": "$2a$10$j7YF9YdCZGvAYikia9hPLudQC5xAqobOtS3gZ7Yc4X5FL6igl6eEu",
+      "name": "Sophia",
+      "id": 14
+    },
+    {
+      "email": "ethan@learnwithsumit.com",
+      "password": "$2a$10$j7YF9YdCZGvAYikia9hPLudQC5xAqobOtS3gZ7Yc4X5FL6igl6eEu",
+      "name": "Ethan",
+      "id": 15
+    },
+    {
+      "email": "mia@learnwithsumit.com",
+      "password": "$2a$10$j7YF9YdCZGvAYikia9hPLudQC5xAqobOtS3gZ7Yc4X5FL6igl6eEu",
+      "name": "Mia",
+      "id": 16
+    },
+    {
+      "email": "andrew@learnwithsumit.com",
+      "password": "$2a$10$j7YF9YdCZGvAYikia9hPLudQC5xAqobOtS3gZ7Yc4X5FL6igl6eEu",
+      "name": "Andrew",
+      "id": 17
+    },
+    {
       "email": "khairul@gmail.com",
       "password": "$2a$10$57EjZ8fxfWlWZdottCAbee6aNMGyQB4ynNbbo0oxAr/2tI3NO33by",
       "name": "khairul",
-      "id": 3
+      "id": 18
     }
   ],
   "conversations": [
@@ -55,6 +145,291 @@
       "message": "are you okay?",
       "timestamp": 1681797884999,
       "id": 2
+    },
+    {
+      "participants": "sumit@learnwithsumit.com-john@learnwithsumit.com",
+      "users": [
+        {
+          "email": "sumit@learnwithsumit.com",
+          "name": "Sumit",
+          "id": 1
+        },
+        {
+          "email": "john@learnwithsumit.com",
+          "password": "$2a$10$j7YF9YdCZGvAYikia9hPLudQC5xAqobOtS3gZ7Yc4X5FL6igl6eEu",
+          "name": "John",
+          "id": 3
+        }
+      ],
+      "message": "john",
+      "timestamp": 1681811237180,
+      "id": 3
+    },
+    {
+      "participants": "sumit@learnwithsumit.com-jane@learnwithsumit.com",
+      "users": [
+        {
+          "email": "sumit@learnwithsumit.com",
+          "name": "Sumit",
+          "id": 1
+        },
+        {
+          "email": "jane@learnwithsumit.com",
+          "password": "$2a$10$j7YF9YdCZGvAYikia9hPLudQC5xAqobOtS3gZ7Yc4X5FL6igl6eEu",
+          "name": "Jane",
+          "id": 4
+        }
+      ],
+      "message": "jane",
+      "timestamp": 1681811260268,
+      "id": 4
+    },
+    {
+      "participants": "sumit@learnwithsumit.com-michael@learnwithsumit.com",
+      "users": [
+        {
+          "email": "sumit@learnwithsumit.com",
+          "name": "Sumit",
+          "id": 1
+        },
+        {
+          "email": "michael@learnwithsumit.com",
+          "password": "$2a$10$j7YF9YdCZGvAYikia9hPLudQC5xAqobOtS3gZ7Yc4X5FL6igl6eEu",
+          "name": "Michael",
+          "id": 5
+        }
+      ],
+      "message": "michael",
+      "timestamp": 1681811283996,
+      "id": 5
+    },
+    {
+      "participants": "sumit@learnwithsumit.com-sara@learnwithsumit.com",
+      "users": [
+        {
+          "email": "sumit@learnwithsumit.com",
+          "name": "Sumit",
+          "id": 1
+        },
+        {
+          "email": "sara@learnwithsumit.com",
+          "password": "$2a$10$j7YF9YdCZGvAYikia9hPLudQC5xAqobOtS3gZ7Yc4X5FL6igl6eEu",
+          "name": "Sara",
+          "id": 6
+        }
+      ],
+      "message": "sara",
+      "timestamp": 1681811300667,
+      "id": 6
+    },
+    {
+      "participants": "sumit@learnwithsumit.com-david@learnwithsumit.com",
+      "users": [
+        {
+          "email": "sumit@learnwithsumit.com",
+          "name": "Sumit",
+          "id": 1
+        },
+        {
+          "email": "david@learnwithsumit.com",
+          "password": "$2a$10$j7YF9YdCZGvAYikia9hPLudQC5xAqobOtS3gZ7Yc4X5FL6igl6eEu",
+          "name": "David",
+          "id": 7
+        }
+      ],
+      "message": "david",
+      "timestamp": 1681811313267,
+      "id": 7
+    },
+    {
+      "participants": "sumit@learnwithsumit.com-amy@learnwithsumit.com",
+      "users": [
+        {
+          "email": "sumit@learnwithsumit.com",
+          "name": "Sumit",
+          "id": 1
+        },
+        {
+          "email": "amy@learnwithsumit.com",
+          "password": "$2a$10$j7YF9YdCZGvAYikia9hPLudQC5xAqobOtS3gZ7Yc4X5FL6igl6eEu",
+          "name": "Amy",
+          "id": 8
+        }
+      ],
+      "message": "amy",
+      "timestamp": 1681811322203,
+      "id": 8
+    },
+    {
+      "participants": "sumit@learnwithsumit.com-kevin@learnwithsumit.com",
+      "users": [
+        {
+          "email": "sumit@learnwithsumit.com",
+          "name": "Sumit",
+          "id": 1
+        },
+        {
+          "email": "kevin@learnwithsumit.com",
+          "password": "$2a$10$j7YF9YdCZGvAYikia9hPLudQC5xAqobOtS3gZ7Yc4X5FL6igl6eEu",
+          "name": "Kevin",
+          "id": 9
+        }
+      ],
+      "message": "kevin",
+      "timestamp": 1681811334363,
+      "id": 9
+    },
+    {
+      "participants": "sumit@learnwithsumit.com-emily@learnwithsumit.com",
+      "users": [
+        {
+          "email": "sumit@learnwithsumit.com",
+          "name": "Sumit",
+          "id": 1
+        },
+        {
+          "email": "emily@learnwithsumit.com",
+          "password": "$2a$10$j7YF9YdCZGvAYikia9hPLudQC5xAqobOtS3gZ7Yc4X5FL6igl6eEu",
+          "name": "Emily",
+          "id": 10
+        }
+      ],
+      "message": "emily",
+      "timestamp": 1681811354595,
+      "id": 10
+    },
+    {
+      "participants": "sumit@learnwithsumit.com-jason@learnwithsumit.com",
+      "users": [
+        {
+          "email": "sumit@learnwithsumit.com",
+          "name": "Sumit",
+          "id": 1
+        },
+        {
+          "email": "jason@learnwithsumit.com",
+          "password": "$2a$10$j7YF9YdCZGvAYikia9hPLudQC5xAqobOtS3gZ7Yc4X5FL6igl6eEu",
+          "name": "Jason",
+          "id": 11
+        }
+      ],
+      "message": "jason",
+      "timestamp": 1681811365987,
+      "id": 11
+    },
+    {
+      "participants": "sumit@learnwithsumit.com-olivia@learnwithsumit.com",
+      "users": [
+        {
+          "email": "sumit@learnwithsumit.com",
+          "name": "Sumit",
+          "id": 1
+        },
+        {
+          "email": "olivia@learnwithsumit.com",
+          "password": "$2a$10$j7YF9YdCZGvAYikia9hPLudQC5xAqobOtS3gZ7Yc4X5FL6igl6eEu",
+          "name": "Olivia",
+          "id": 12
+        }
+      ],
+      "message": "olivia",
+      "timestamp": 1681811377882,
+      "id": 12
+    },
+    {
+      "participants": "sumit@learnwithsumit.com-jacob@learnwithsumit.com",
+      "users": [
+        {
+          "email": "sumit@learnwithsumit.com",
+          "name": "Sumit",
+          "id": 1
+        },
+        {
+          "email": "jacob@learnwithsumit.com",
+          "password": "$2a$10$j7YF9YdCZGvAYikia9hPLudQC5xAqobOtS3gZ7Yc4X5FL6igl6eEu",
+          "name": "Jacob",
+          "id": 13
+        }
+      ],
+      "message": "jacob",
+      "timestamp": 1681811391563,
+      "id": 13
+    },
+    {
+      "participants": "sumit@learnwithsumit.com-sophia@learnwithsumit.com",
+      "users": [
+        {
+          "email": "sumit@learnwithsumit.com",
+          "name": "Sumit",
+          "id": 1
+        },
+        {
+          "email": "sophia@learnwithsumit.com",
+          "password": "$2a$10$j7YF9YdCZGvAYikia9hPLudQC5xAqobOtS3gZ7Yc4X5FL6igl6eEu",
+          "name": "Sophia",
+          "id": 14
+        }
+      ],
+      "message": "sophia",
+      "timestamp": 1681811405018,
+      "id": 14
+    },
+    {
+      "participants": "sumit@learnwithsumit.com-ethan@learnwithsumit.com",
+      "users": [
+        {
+          "email": "sumit@learnwithsumit.com",
+          "name": "Sumit",
+          "id": 1
+        },
+        {
+          "email": "ethan@learnwithsumit.com",
+          "password": "$2a$10$j7YF9YdCZGvAYikia9hPLudQC5xAqobOtS3gZ7Yc4X5FL6igl6eEu",
+          "name": "Ethan",
+          "id": 15
+        }
+      ],
+      "message": "ethan",
+      "timestamp": 1681811416546,
+      "id": 15
+    },
+    {
+      "participants": "sumit@learnwithsumit.com-mia@learnwithsumit.com",
+      "users": [
+        {
+          "email": "sumit@learnwithsumit.com",
+          "name": "Sumit",
+          "id": 1
+        },
+        {
+          "email": "mia@learnwithsumit.com",
+          "password": "$2a$10$j7YF9YdCZGvAYikia9hPLudQC5xAqobOtS3gZ7Yc4X5FL6igl6eEu",
+          "name": "Mia",
+          "id": 16
+        }
+      ],
+      "message": "mia",
+      "timestamp": 1681811425866,
+      "id": 16
+    },
+    {
+      "participants": "sumit@learnwithsumit.com-andrew@learnwithsumit.com",
+      "users": [
+        {
+          "email": "sumit@learnwithsumit.com",
+          "name": "Sumit",
+          "id": 1
+        },
+        {
+          "email": "andrew@learnwithsumit.com",
+          "password": "$2a$10$j7YF9YdCZGvAYikia9hPLudQC5xAqobOtS3gZ7Yc4X5FL6igl6eEu",
+          "name": "Andrew",
+          "id": 17
+        }
+      ],
+      "message": "andrew",
+      "timestamp": 1681811437674,
+      "id": 17
     }
   ],
   "messages": [
@@ -258,6 +633,261 @@
       "message": "dfdf",
       "timestamp": 1681798188639,
       "id": 12
+    },
+    {
+      "conversationId": 3,
+      "sender": {
+        "email": "sumit@learnwithsumit.com",
+        "name": "Sumit",
+        "id": 1
+      },
+      "receiver": {
+        "email": "john@learnwithsumit.com",
+        "password": "$2a$10$j7YF9YdCZGvAYikia9hPLudQC5xAqobOtS3gZ7Yc4X5FL6igl6eEu",
+        "name": "John",
+        "id": 3
+      },
+      "message": "john",
+      "timestamp": 1681811237180,
+      "id": 13
+    },
+    {
+      "conversationId": 4,
+      "sender": {
+        "email": "sumit@learnwithsumit.com",
+        "name": "Sumit",
+        "id": 1
+      },
+      "receiver": {
+        "email": "jane@learnwithsumit.com",
+        "password": "$2a$10$j7YF9YdCZGvAYikia9hPLudQC5xAqobOtS3gZ7Yc4X5FL6igl6eEu",
+        "name": "Jane",
+        "id": 4
+      },
+      "message": "jane",
+      "timestamp": 1681811260268,
+      "id": 14
+    },
+    {
+      "conversationId": 5,
+      "sender": {
+        "email": "sumit@learnwithsumit.com",
+        "name": "Sumit",
+        "id": 1
+      },
+      "receiver": {
+        "email": "michael@learnwithsumit.com",
+        "password": "$2a$10$j7YF9YdCZGvAYikia9hPLudQC5xAqobOtS3gZ7Yc4X5FL6igl6eEu",
+        "name": "Michael",
+        "id": 5
+      },
+      "message": "michael",
+      "timestamp": 1681811283996,
+      "id": 15
+    },
+    {
+      "conversationId": 6,
+      "sender": {
+        "email": "sumit@learnwithsumit.com",
+        "name": "Sumit",
+        "id": 1
+      },
+      "receiver": {
+        "email": "sara@learnwithsumit.com",
+        "password": "$2a$10$j7YF9YdCZGvAYikia9hPLudQC5xAqobOtS3gZ7Yc4X5FL6igl6eEu",
+        "name": "Sara",
+        "id": 6
+      },
+      "message": "sara",
+      "timestamp": 1681811300667,
+      "id": 16
+    },
+    {
+      "conversationId": 7,
+      "sender": {
+        "email": "sumit@learnwithsumit.com",
+        "name": "Sumit",
+        "id": 1
+      },
+      "receiver": {
+        "email": "david@learnwithsumit.com",
+        "password": "$2a$10$j7YF9YdCZGvAYikia9hPLudQC5xAqobOtS3gZ7Yc4X5FL6igl6eEu",
+        "name": "David",
+        "id": 7
+      },
+      "message": "david",
+      "timestamp": 1681811313267,
+      "id": 17
+    },
+    {
+      "conversationId": 8,
+      "sender": {
+        "email": "sumit@learnwithsumit.com",
+        "name": "Sumit",
+        "id": 1
+      },
+      "receiver": {
+        "email": "amy@learnwithsumit.com",
+        "password": "$2a$10$j7YF9YdCZGvAYikia9hPLudQC5xAqobOtS3gZ7Yc4X5FL6igl6eEu",
+        "name": "Amy",
+        "id": 8
+      },
+      "message": "amy",
+      "timestamp": 1681811322203,
+      "id": 18
+    },
+    {
+      "conversationId": 9,
+      "sender": {
+        "email": "sumit@learnwithsumit.com",
+        "name": "Sumit",
+        "id": 1
+      },
+      "receiver": {
+        "email": "kevin@learnwithsumit.com",
+        "password": "$2a$10$j7YF9YdCZGvAYikia9hPLudQC5xAqobOtS3gZ7Yc4X5FL6igl6eEu",
+        "name": "Kevin",
+        "id": 9
+      },
+      "message": "kevin",
+      "timestamp": 1681811334363,
+      "id": 19
+    },
+    {
+      "conversationId": 10,
+      "sender": {
+        "email": "sumit@learnwithsumit.com",
+        "name": "Sumit",
+        "id": 1
+      },
+      "receiver": {
+        "email": "emily@learnwithsumit.com",
+        "password": "$2a$10$j7YF9YdCZGvAYikia9hPLudQC5xAqobOtS3gZ7Yc4X5FL6igl6eEu",
+        "name": "Emily",
+        "id": 10
+      },
+      "message": "emily",
+      "timestamp": 1681811354595,
+      "id": 20
+    },
+    {
+      "conversationId": 11,
+      "sender": {
+        "email": "sumit@learnwithsumit.com",
+        "name": "Sumit",
+        "id": 1
+      },
+      "receiver": {
+        "email": "jason@learnwithsumit.com",
+        "password": "$2a$10$j7YF9YdCZGvAYikia9hPLudQC5xAqobOtS3gZ7Yc4X5FL6igl6eEu",
+        "name": "Jason",
+        "id": 11
+      },
+      "message": "jason",
+      "timestamp": 1681811365987,
+      "id": 21
+    },
+    {
+      "conversationId": 12,
+      "sender": {
+        "email": "sumit@learnwithsumit.com",
+        "name": "Sumit",
+        "id": 1
+      },
+      "receiver": {
+        "email": "olivia@learnwithsumit.com",
+        "password": "$2a$10$j7YF9YdCZGvAYikia9hPLudQC5xAqobOtS3gZ7Yc4X5FL6igl6eEu",
+        "name": "Olivia",
+        "id": 12
+      },
+      "message": "olivia",
+      "timestamp": 1681811377882,
+      "id": 22
+    },
+    {
+      "conversationId": 13,
+      "sender": {
+        "email": "sumit@learnwithsumit.com",
+        "name": "Sumit",
+        "id": 1
+      },
+      "receiver": {
+        "email": "jacob@learnwithsumit.com",
+        "password": "$2a$10$j7YF9YdCZGvAYikia9hPLudQC5xAqobOtS3gZ7Yc4X5FL6igl6eEu",
+        "name": "Jacob",
+        "id": 13
+      },
+      "message": "jacob",
+      "timestamp": 1681811391563,
+      "id": 23
+    },
+    {
+      "conversationId": 14,
+      "sender": {
+        "email": "sumit@learnwithsumit.com",
+        "name": "Sumit",
+        "id": 1
+      },
+      "receiver": {
+        "email": "sophia@learnwithsumit.com",
+        "password": "$2a$10$j7YF9YdCZGvAYikia9hPLudQC5xAqobOtS3gZ7Yc4X5FL6igl6eEu",
+        "name": "Sophia",
+        "id": 14
+      },
+      "message": "sophia",
+      "timestamp": 1681811405018,
+      "id": 24
+    },
+    {
+      "conversationId": 15,
+      "sender": {
+        "email": "sumit@learnwithsumit.com",
+        "name": "Sumit",
+        "id": 1
+      },
+      "receiver": {
+        "email": "ethan@learnwithsumit.com",
+        "password": "$2a$10$j7YF9YdCZGvAYikia9hPLudQC5xAqobOtS3gZ7Yc4X5FL6igl6eEu",
+        "name": "Ethan",
+        "id": 15
+      },
+      "message": "ethan",
+      "timestamp": 1681811416546,
+      "id": 25
+    },
+    {
+      "conversationId": 16,
+      "sender": {
+        "email": "sumit@learnwithsumit.com",
+        "name": "Sumit",
+        "id": 1
+      },
+      "receiver": {
+        "email": "mia@learnwithsumit.com",
+        "password": "$2a$10$j7YF9YdCZGvAYikia9hPLudQC5xAqobOtS3gZ7Yc4X5FL6igl6eEu",
+        "name": "Mia",
+        "id": 16
+      },
+      "message": "mia",
+      "timestamp": 1681811425866,
+      "id": 26
+    },
+    {
+      "conversationId": 17,
+      "sender": {
+        "email": "sumit@learnwithsumit.com",
+        "name": "Sumit",
+        "id": 1
+      },
+      "receiver": {
+        "email": "andrew@learnwithsumit.com",
+        "password": "$2a$10$j7YF9YdCZGvAYikia9hPLudQC5xAqobOtS3gZ7Yc4X5FL6igl6eEu",
+        "name": "Andrew",
+        "id": 17
+      },
+      "message": "andrew",
+      "timestamp": 1681811437674,
+      "id": 27
     }
   ]
 }
