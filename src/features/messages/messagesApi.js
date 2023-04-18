@@ -26,7 +26,6 @@ const messagesApi = apiSlice.injectEndpoints({
           socket.on('messages', ({ data }) => {
             const loggedInUser = getState().auth?.user?.email;
             const receiver = data?.receiver?.email;
-
             if (loggedInUser === receiver) {
               dispatch(
                 apiSlice.util.updateQueryData(
