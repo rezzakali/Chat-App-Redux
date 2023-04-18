@@ -6,12 +6,35 @@ import { Server } from 'socket.io';
 
 const app = express();
 const server = http.createServer(app);
-let io;
-io = new Server(server);
+
+let io = new Server(server);
 
 global.io = io;
 
 const router = jsonServer.router('db.json');
+
+router.render = (req, res) => {
+  const method = req.method;
+  const path = req.path;
+
+  if (
+    path.includes('/conversations') &&
+    (method === 'POST' || method === 'PATCH')
+  ) {
+    io.emit('conversation', {
+      data: res.locals.data,
+    });
+  }
+
+  if (path.includes('/messages') && method === 'POST') {
+    io.emit('messages', {
+      data: res.locals.data,
+    });
+  }
+
+  res.json(res.locals.data);
+};
+
 const middlewares = jsonServer.defaults();
 const port = process.env.PORT || 9000;
 
